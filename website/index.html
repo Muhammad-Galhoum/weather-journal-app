@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="full-screen-container" id = "app">
+    <div class="input-container">
+            <h2 class="title">Weather Journal App </h2>
+            <div class="input-group zip-input">
+              <label for="zip">Zip Code.</label>
+              <input type="text" id="zip" placeholder="Enter zip code here...">
+              <span class='error-message' id="error-message">error massege</span>
+            </div>
+      
+          <div class="input-group feeling-input">
+            <label for="feelings">How do you feel today ?</label>
+            <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here..." rows="2" cols="25"></textarea>
+          </div>
+            
+        
+          <button class="btn" id="generate" type = "submit"> Generate </button>
+          <button class="btn" id="clear-btn" type = "submit">Clear </button>
+
+
+          <div class ="output-continer">
+              <h4  class = "caption">Most Recent Entry</h4>
+              <div  class="entry-holder" id="entry-holder">
+                  <div id = "date"><span class="output-item">the current date is : </span></div> 
+                  <div id = "temp"> <span class="output-item">the current temperature is :</span></div>
+                  <div id = "content"> <span class="output-item">your mode for today : </span></div>
+                </div>
+            </div>
+     </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

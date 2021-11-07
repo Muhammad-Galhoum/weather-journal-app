@@ -1,0 +1,150 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.full-screen-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  background-color: hsla(201, 100%, 6%, 0.6);
+  padding: 50px 30px;
+  width: 50vw;
+  min-width: 400px;
+  max-width: 700px;
+  margin: 20px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  font: 40px normal;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: rgb(253, 252, 252);
+  font-size: 22px;
+  margin: 15px;
+  padding: 6px;
+}
+
+.input-group input,
+.input-group textarea {
+  background: none;
+  border: none;
+  outline: none;
+  background-color: hsla(201, 100%, 6%, 0.3);
+  font: 25px lighter;
+  padding: 12px;
+  border: 1px solid hsla(201, 100%, 6%);
+  border-radius: 5px;
+  color: white;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  font: 12px lighter;
+  color: rgb(211, 204, 204);
+  padding: 6px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border: 1px solid hsla(201, 100%, 50%);
+}
+
+.btn {
+  border: none;
+  background: none;
+  outline: none;
+  background-color: hsla(201, 100%, 6%, 0.1);
+  padding: 10px 30px;
+  width: 100%;
+  border: 1px solid hsla(201, 100%, 50%);
+  border-radius: 5px;
+  font: 25px lighter;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsla(201, 100%, 50%, 0.3);
+}
+
+.btn:focus {
+  background-color: hsla(201, 100%, 50%, 0.5);
+}
+
+.output-continer {
+  margin: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: hsla(201, 100%, 6%, 0.3);
+  font: 25px lighter;
+  padding: 15px;
+  border: 1px solid hsla(201, 100%, 6%);
+  border-radius: 5px;
+  color: white;
+}
+
+.caption {
+  font: 18px bold;
+  color: rgb(55, 178, 245);
+  text-align: center;
+  margin: 5px;
+}
+
+.output-item {
+  padding: 6px;
+  text-align: center;
+  margin: 5px;
+  font: 16px normal Arial, Helvetica, sans-serif;
+}
+.entry-holder span{
+ text-transform:capitalize
+}
+
+.error-message {
+  display: none;
+}
+
+.error-message.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 6px;
+  background-color: rgb(206, 50, 50);
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.data-post {
+  font-size: 16px;
+  color: rgb(55, 178, 245);
+}
